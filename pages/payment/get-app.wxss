@@ -1,0 +1,73 @@
+/* pages/payment/app.wxss */
+button::after{
+  border:none;
+}
+.success,.defeated{
+  text-align: center;
+  color:#FF6D10;
+  font-size: 20px;
+  line-height: 150px;
+  font-weight: 600;
+}
+.payButton,.payButtonApp{
+  background:#FF6D10;
+  width:80%;
+  color:#fff;
+}
+.payButtonApp{
+  background:#fff;
+
+  color:#FF6D10;
+  margin-top:30px;
+}
+.payButtonApp::after{
+  border:1px solid #FF6D10;
+}
+.bgColor{
+  background:#FF6D10;
+  color:#fff;
+}
+
+.wechatPay{
+  width:100%;
+  display:flex;
+  -webkit-display:flex;
+  align-items: center;
+  border-top:2rpx solid #eee;
+  border-bottom:2rpx solid #eee;
+  padding-top:8px;
+  padding-bottom:8px;
+}
+.wechatPay::after{
+  content: '';
+  width:12px;height:12px;
+  border-top:1px solid #999;
+  border-right:1px solid #999;
+  position: absolute;
+  -webkit-position:absolute;
+  right:30rpx;
+  transform: rotate(45deg);
+  -webkit-transform:rotate(45deg);
+}
+.wechatPay>text{margin-left:5%;font-size:16px;font-weight: bold;}
+.payWay{
+  line-height:80px;
+  margin-left:30rpx;
+  font-size:20px;
+  font-weight: bold;
+}
+.icon-pay{
+width:50px;height:50px;
+}
+.logoBox{
+  margin-top:15%;
+  text-align: center;
+}
+.logoBox>view{
+  line-height:30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.logo{width:80px;height:80px;}
+.textLett{letter-spacing: 1px;}
+

@@ -1,0 +1,23 @@
+<!--pages/attention/attention.wxml-->
+<view>
+  <image class="png" src='../../images/puber.png' width='100%' mode="widthFix"></image>
+</view>
+<view class="container">
+  <view>
+    <view class="title">互助内容</view>
+    <view>预存15元加入互助计划,一人生病，全体均摊。</view>
+    <view class="content">每人每次分摊不超过5元，最高可得50万元互助金。</view>
+    <image class="png" mode="widthFix" src="../../images/price.png"></image>
+  </view>
+  <view>
+    <view class="title">互助规则</view>
+    <view class="rule"><text>加入互助年龄</text><text>18-50周岁，身体健康</text> </view>
+    <view class="rule"><text>互助范围</text><text>胃癌、肝癌等60种大病</text> </view>
+    <view class="rule"><text>会员服务管理费</text><text>15元/人/年</text> </view>
+    <view class="rule"><text>最高获助</text><text>50万元</text> </view>
+    <view class="rule"><text>分摊规则</text><text>单次不超过5元</text> </view>
+    <view class="rule"><text>余额要求</text><text>账户余额不低于1元即可</text> </view>
+    <view class="rule"><text>等待期</text><text>180天(防止带病加入)</text> </view>
+  </view>
+    <view class="button_max" bindtap="returnFun">返回</view>
+</view>

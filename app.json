@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/payment/get-app",
+    "pages/index/index",
+    "pages/attention/attention",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#FF6D10",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/attention.png",
+        "selectedIconPath": "images/attention-active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/shouye.png",
+        "selectedIconPath": "images/shouye-active.png"
+      }
+    ]
+  }
+}

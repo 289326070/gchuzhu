@@ -1,0 +1,39 @@
+/* pages/attention/attention.wxss */
+
+.content {
+  font-size: 14px;
+  color: #999;
+  line-height: 2em;
+  margin-bottom:15px;
+}
+
+.png {
+  width: 100%;
+}
+.rule {
+  border-bottom: 1px dashed #ddd;
+  padding: 15px 0;
+}
+
+.rule>text:first-child {
+  color: #333;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.rule>text:nth-child(2) {
+  color: #999;
+}
+
+.button_max{
+  background:#ff6d10;
+  color:#fff;
+  -webkit-border-radius:50px;
+  border-radius: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height:50px;
+  font-size:20px;
+  margin-top:30px;
+  margin-bottom:30px;
+}

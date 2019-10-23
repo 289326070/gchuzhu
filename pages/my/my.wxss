@@ -1,0 +1,140 @@
+/* pages/my/my.wxss */
+
+.userImg {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 30rpx;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.containerMy {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.interval {
+  height: 10rpx;
+  background: #fafafa;
+}
+
+.buttonFamliy {
+  background: #ff6d10;
+  border-radius: 70rpx;
+  font-size: 14px;
+  line-height: 70rpx;
+  color: #fff;
+  letter-spacing: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: linear-gradient(-45deg, rgb(241, 206, 5), #fe953f);
+  background: -webkit-linear-gradient(-45deg, rgb(241, 206, 5), #fe953f);
+}
+
+.falilyTitle {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.famliyPlan {
+  padding: 30rpx;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  margin-bottom: 40rpx;
+}
+
+.famliyPlan>view:nth-child(1) {
+  padding-bottom: 30rpx;
+}
+
+.famliyPlan>view:nth-child(2) {
+  padding-bottom: 40rpx;
+}
+
+.buttonMin {
+  background: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: #ff6d10;
+}
+
+.activeColor {
+  color: #ff6d10;
+}
+
+.bg1 {
+  background: #ececec;
+  color: #a2a2a2;
+}
+
+.bg2 {
+  background: linear-gradient(-45deg, #ffc029, #fe953f);
+  background: -webkit-linear-gradient(-45deg, #ffc029, #fe953f);
+  box-shadow: #fe953f 0 0 20px 0px;
+  color: #fff;
+}
+
+.mycolor3 {
+  color: #333;
+}
+
+.userName {
+  color: #ffc029;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.noPlan {
+  border: 1px solid #ddd;
+  padding: 15px 30rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  text-align: center;
+  font-size: 18px;
+  color: #ddd;
+  height: 600rpx;
+  border-radius: 10px;
+  /* line-height: 400rpx; */
+}
+
+.icon-no-plan {
+  width: 304rpx;
+  height: 256rpx;
+  margin-top: 120rpx;
+}
+
+.height36 {
+  line-height: 36px;
+}
+
+.nologin {
+  line-height: 42px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.getUserInfo {
+  box-sizing: border-box;
+  border: 1px solid #ffc029;
+  border-radius: 40px;
+  color: #ffc029;
+  letter-spacing: 2px;
+  height: 35px;
+  width:100px;
+  line-height: 33px;
+  background: #fff;
+  text-align: center;
+}
+.getUserInfo::after {
+  border: none;
+}
+.line40{
+  line-height: 40px;
+}
+.logOff{
+position: absolute;
+right:4%;
+}

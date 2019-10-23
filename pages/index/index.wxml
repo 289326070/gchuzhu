@@ -1,0 +1,60 @@
+<!--pages/index/index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" style='height:200px'>
+  <block>
+    <swiper-item >
+      <image src="{{advertiseList[3].poster}}" width='100%' class='swiper_Img' mode="widthFix"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="container bg_fa">
+  <view class='title'>加入光彩计划</view>
+  <block>
+    <navigator class="flex project" url='../attention/attention' hover-class="none">
+      <view class="img">
+        <image src='{{itemList[2].itemImg}}'></image>
+      </view>
+      <view class="text">
+        <view class="topText">{{itemList[2].itemName}}</view>
+        <view class="introduce">
+          <text>{{itemList[2].itemIntro}}</text> </view>
+        <view>
+          <text class="botton">点击查看</text>
+        </view>
+      </view>
+    </navigator>
+  </block>
+  <view class='title'>平台优势</view>
+  <view class="advantage">
+    <view>
+      <image src='{{gcMeriList[0].img}}'></image>
+      <text>{{gcMeriList[0].title}}</text>
+    </view>
+    <view>
+      <image src='{{gcMeriList[1].img}}'></image>
+      <text>{{gcMeriList[1].title}}</text>
+    </view>
+    <view>
+      <image src='{{gcMeriList[2].img}}'></image>
+      <text>{{gcMeriList[2].title}}</text>
+    </view>
+    <view>
+      <image src='{{gcMeriList[3].img}}'></image>
+      <text>{{gcMeriList[3].title}}</text>
+    </view>
+
+  </view>
+  <view class="title">常见问题</view>
+  <view class="problem">
+    <view   wx:for='{{faqList}}' wx:key='index'>
+      <view class="problem_title" data-index='{{index}}' bindtap="statesFun">{{faqList[index].question}}</view>
+      <view class="problem_text {{heightStates==index&&state?'height':''}}">
+        <text>{{array[index]}}</text> </view>
+    </view> 
+  </view>
+</view>
+<view class="center bg_fa">
+  <view>
+    <image src='../../images/gcfz.png'></image>
+  </view>
+  <text>互帮互助\t共同抵御大病风险</text>
+</view>

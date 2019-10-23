@@ -1,0 +1,126 @@
+/* pages/index/index.wxss */
+
+.swiper_Img {
+  width: 100%;
+}
+
+.project {
+  margin-bottom: 12px;
+  background-color: #fff;
+  padding: 15px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.project>view>image {
+  width: 238rpx;
+  height: 238rpx;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  margin-right: 15px;
+}
+
+.topText {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(51, 51, 51, 1);
+  margin-bottom: 8px;
+}
+
+.text>view>.botton {
+  display: inline-block;
+  background: #ff6d10;
+  padding: 8px 0;
+  color: #fff;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  width: 70%;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top:10px;
+}
+
+.text>.introduce {
+  margin-bottom: 8px;
+}
+
+.text>.introduce>text {
+  color: #666;
+  font-size: 14px;
+  line-height:1.5em;
+}
+
+.advantage {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.advantage>view {
+  box-sizing: border-box;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.advantage>view>image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 10px;
+}
+
+.advantage>view:nth-child(1) {
+  border-right: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.advantage>view:nth-child(2) {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.advantage>view:nth-child(3) {
+  border-right: 1px solid #dfdfdf;
+}
+
+.problem>view>.problem_title {
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px dashed #dfdfdf;
+  line-height: 2.5em;
+}
+
+.problem>view>.problem_text {
+  height: 0;
+  overflow: hidden;
+  background: #fff;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.problem>view>.height {
+  height: 100%;
+  padding: 10px;
+}
+
+.none {
+  display: none;
+}
+
+.center {
+  text-align: center;
+  padding: 20px 0;
+  color: #ddd;
+  font-size: 14px;
+}
+
+.center>view>image {
+  width: 80px;
+  height: 20px;
+  margin-bottom: 5px;
+}

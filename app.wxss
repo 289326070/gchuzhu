@@ -1,0 +1,48 @@
+/**app.wxss**/
+
+.container{
+  height: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+/* 弹性而已 */
+.flex{
+  display: flex;
+  -webkit-display:flex;
+}
+.flex-start{
+  justify-content: flex-start;
+}
+.flex-between{
+  justify-content: space-between;
+}
+.alignCenter{
+  align-items: center;
+}
+.alignbottom{align-items: flex-end}
+
+/* 字号 */
+.text-size14{
+  font-size: 14px;
+}
+.text-size16{
+  font-size: 18px;
+}
+.text-size20{
+  font-size:20px;
+}
+/* 字体颜色 */
+.bg_fa{
+  background:#fafafa;
+}
+.border{
+  border:1px solid purple;
+}
+/*  */
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(51, 51, 51, 1);
+  padding: 30rpx 0 40rpx 0;
+}
+

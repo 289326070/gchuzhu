@@ -1,0 +1,12 @@
+<view wx:if="{{showPayElement}}">
+  <view class="logoBox">
+    <image class="logo" mode="aspectFill " src="../../images/logo.png"></image>
+    <view class="textLett">光彩互助</view>
+  </view>
+  <view class='success textLett'>{{payText}}</view>
+  <view></view>
+  <button class='payButton textLett' bindtap="AppPayments" wx:if = "{{heavyPlay}}">重新支付</button>
+  <!-- heavyPlay==0?payButton:payButtonApp -->
+  <button class="{{heavyPlay ? 'payButtonApp' : 'payButton'}} textLett" open-type="launchApp" app-parameter="{{payStatus}}" binderror="launchAppError">返回</button>
+
+</view>

@@ -1,0 +1,59 @@
+<!--pages/my/my.wxml-->
+
+<view class='flex justify container containerMy' wx:if='{{LoginStates}}'>
+  <image class='userImg' src="{{userInfo.avatarUrl}}"></image>
+  <view class="text-size14 flex flex-between">
+    <view>
+      <view class="bold {{isNoPlan==0?'':'line40'}}" style='text-align:center'>{{userInfo.nickName}}</view>
+      <view class='height36' wx:if="{{isNoPlan==0}}">已帮助{{helpCount}}人</view>
+    </view>
+    <view class="logOff getUserInfo" bindtap='logOff'>
+      退出
+    </view>
+  </view>
+</view>
+<view class='flex  flex-between container containerMy' wx:else="{{LoginStates}}">
+  <view class="flex">
+    <image class='userImg' src="../../images/login.png"></image>
+    <text class="nologin">未登录</text>
+  </view>
+  <view wx:if="{{canIUse&&!LoginStates}}">
+    <button class='getUserInfo' open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录</button>
+  </view>
+</view>
+<view class='interval'></view>
+<view class="flex container containerMy flex-between alignCenter">
+  <view class="falilyTitle">
+    <text class="userName bold">{{userInfo.nickName}}</text>家庭互助计划</view>
+</view>
+<!-- 1 -->
+<view class="container" wx:if="{{isNoPlan!=0}}">
+
+  <view class="famliyPlan {{item.active==0?'bg1':'bg2'}}" wx:for="{{planList}}" wx:for-item='item' wx:key='item.itemId' bindtap="attention">
+    <view class='flex flex-between'>
+      <view class="text-size16 {{item.active==0?'mycolor3':''}}">{{item.favorer}}</view>
+      <view class="">{{item.itemName}}</view>
+    </view>
+    <view>
+      <text wx:if="{{item.survey>0}}">剩余{{item.survey}}天</text>
+      <text wx:else="{{item.survey<=0}}">50万救助金 <text>待生效</text></text>
+    </view>
+    <view class='flex flex-between alignCenter'>
+      <view>
+        <text class="text-size20 bold {{item.active==0?'mycolor3':''}}">{{item.fee}}</text>
+        <text class="text-eee">\t余额(元)</text>
+      </view>
+      <!-- <view class='buttonMin'>立即生效</view> -->
+    </view>
+  </view>
+</view>
+<view wx:if="{{isNoPlan==0}}" class="container">
+  <view class='noPlan'>
+    <view>
+      <image class="icon-no-plan" src="../../images/icon-no-plan.png"></image>
+    </view>
+    <view>
+      暂时没有计划
+    </view>
+  </view>
+</view>
